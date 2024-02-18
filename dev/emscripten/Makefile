@@ -97,7 +97,7 @@ $(COBJS): CFLAGS += $(INCLUDES)
 
 #$(CPPOBJS): $(CPPSRCS) $(HEADERS)
 
-EFLAGS= -s WASM=1 -s USE_WEBGL2=1 -s FULL_ES3=1 \
+EFLAGS= -s WASM=1 -s USE_WEBGL2=1 -s FULL_ES3=1 -s FULL_ES2=1\
 		--source-map-base http://localhost:6931/ \
 		-s ALLOW_MEMORY_GROWTH=1 -o lobster.html --preload-file assets@/ \
 		-s DEMANGLE_SUPPORT=1 --emrun --profiling-funcs \
